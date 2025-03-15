@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.container{
+
+    border: 1px solid black;
+    margin: 20px auto;
+    display: flex;
+    width:700px;
+    max-width:100%;
+    height:1000px;
+    border-radius: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+
+
+}
+
+.leftside{
+
+    border-right: 2px solid grey;
+    width: 40%;
+    background-color: rgb(62,29,83);
+    /* height: auto; */
+    /* background-color: rgb(62,29,83); */
+
+}
+
+
+.leftcontent{
+
+    width:100%;
+    height:100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items:center;
+    color:white;
+    
+    gap:15px;
+}
+
+.personphoto{
+
+    width: 50px;
+    height:50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+img{
+
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+h3{
+
+    font-size: 19px;
+}
+
+/* .persondetails{
+
+    text-align:left;
+    margin-left: 10%;
+} */
+
+span{
+
+    font-size:12px;
+    display: block;
+    padding: 5px 0px 5px 0;
+}
+
+h5{
+    font-size: 12px;
+}
+
+.seperator{
+
+    width:20px;
+    height:2px;
+    /* border: 1px solid black; */
+    background-color: grey;
+}
+
+/* .officialdetails{
+
+    
+} */
+
+.details{
+
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+a{
+    color: white;
+    font-size: 12px;
+}
+
+a:hover{
+
+    color:green;
+}
+
+a::after{
+
+    color:grey;
+}
+
+
+.bar
+{
+    width:100%;
+    height:0px;
+    border: 1px solid white;
+    border-radius: 10px;
+    position:relative;
+}
+
+.bar.html::after{
+    content: "";
+    width:80%;
+    height:100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.bar.css::after{
+    content: "";
+    width:70%;
+    height:100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.bar.php::after{
+    content: "";
+    width:80%;
+    height:100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.bar.javascript::after{
+    content: "";
+    width:70%;
+    height:100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.bar.mysql::after{
+    content: "";
+    width:70%;
+    height:100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.bar.ec2::after{
+    content: "";
+    width:60%;
+    height:100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.bar.route53::after{
+    content: "";
+    width:80%;
+    height:100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.bar.ebs::after{
+    content: "";
+    width:60%;
+    height:100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* Right Side */
+
+
+.rightside{
+
+    border-left: 2px solid green;
+    width: 80%;
+    /* overflow-wrap: break-word;
+    word-wrap: break-word; */
+
+}
+
+.rightcontent{
+
+    width:100%;
+    height:100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow:hidden;
+    /* line-height: 15px; */
+    /* overflow-wrap: break-word; 
+    word-wrap: break-word; */
+    /* display: flex;
+    flex-direction: column;
+    align-items:center;
+    color:white;
+    
+    gap:15px; */
+}
+
+.rightcontent p{
+
+    line-height: 20px;
+}
+
+.personsummary{
+
+    width:90%;
+    /* border:1px solid black; */
+
+}
+
+p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+
+.employmenthistory{
+    width:90%;
+    margin-top: 10px;
+    font-family: "Times New Roman", Times, serif;
+    /* font-size: 19px; */
+}
+
+.employmenthistory h5{
+    font-size: 13px;
+}
+
+li{
+    font-size: 12px;
+    list-style-type: disc;
+}
+
+.projects{
+
+    margin-top:10px;
+}
+
+.educationhistory{
+
+    width:90%;
+}
+
+/* Handling the Smaller Screens */
+
+@media (max-width:715px)
+{
+    .container{
+
+        border: 1px solid black;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        /* width:700px; */
+        max-width:100%;
+        height:auto;
+        border-radius: 10px;
+        
+    }
+
+    .leftside, .rightside{
+
+        width:100%;
+        height: auto;
+    }
+
+
+
+    .leftcontent{
+        margin-bottom: 10%;
+
+    }
+}
